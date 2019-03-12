@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul>
+            <li>
+                <input type="text" id="proxy-url">
+            </li>
+            <li>
+                <input type="text" id="proxy-response">
+            </li>
+            <li>
+                <button type="submit" id="proxy-submit">新增</button>
+            </li>
+        </ul>
+        <script>
+           document.getElementById('proxy-submit').addEventListener('click',function(e){
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', 'http://localhost:3005/conf/add', true)
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+                xhr.send('url='+document.getElementById('proxy-url').value+'&response='+document.getElementById('proxy-response').value)
+           })
+           
+        </script>
+    </body>
+</html>

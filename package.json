@@ -12,6 +12,7 @@
   "dependencies": {
     "http-proxy": "^1.17.0",
     "nodemon": "^1.18.10",
+    "querystring": "^0.2.0",
     "serve-handler": "^5.0.8"
   }
 }

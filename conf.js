@@ -1,6 +1,1 @@
-
-
-module.exports = {
-    "/a/":"conf.js",
-    "/b/":"mock/test.json"
-}
+module.exports = {"/a/":"conf.js","/b/":"mock/test.json","/c/":"mock/testc.json"}
